@@ -9,7 +9,7 @@ draft: false
 
 For the past decade I've been the person in the room who gets asked "how many people do we need, and when?" At Amazon that meant planning capacity for 14,000 CDL drivers across 400 sites. At T-Mobile it meant building a scheduling system for 20,000 retail employees. Every time, the answer involved the same ritual: pull data from three places, paste it into a spreadsheet, adjust the formula references, hit refresh, and produce a deck that was already slightly out of date.
 
-It works. Until it doesn't.
+It works. Until it doesn't. The data is instantly stale. A regional leader thinks of a dimension they want to use to split the data. Seeing data for the first time inspires a hundred additional use cases that never came up in the initial scoping conversations. We decide to get hyper-granular with our data and our dataset blows up Excel's 1M row limit (this one is my favorite). 
 
 ---
 
@@ -19,24 +19,26 @@ The spreadsheet is a remarkable tool. It's flexible, it's visual, and anyone who
 
 But there are things a spreadsheet can't do cleanly:
 
-**It can't pull its own data.** Every model I've ever built depends on inputs — attrition rates, average handle times, hiring pipeline numbers — that live somewhere else. Keeping those current means someone manually querying a database, copying the results, and pasting them in. That someone is usually you.
+**It can't pull its own data.** Every model I've ever built depends on inputs — attrition rates, average handle times, hiring pipeline numbers — that live somewhere else. Unless you're handy with VBA, then keeping those inputs current means someone manually querying a database (usually in SQL), copying the results, and pasting them in. That someone is usually you.
 
-**It can't quantify its own uncertainty.** A spreadsheet forecast is a point estimate. It tells you "we'll need 847 drivers in Q3" without telling you whether that number is a near-certainty or a wide range. Planning to exactly 847 when the real answer is "somewhere between 780 and 920" is a very different decision.
+**It can't quantify its own uncertainty.** A spreadsheet forecast is a point-in-time estimate. It tells you "We'll need 847 drivers in Q3" without telling you whether that number is a near-certainty or a wide range. Planning to exactly 847 when the real answer is "somewhere between 780 and 920" is a very different decision. A rare few orgs I've been in talk about planning to P80 or the like, but those are uncommon.
 
-**It doesn't scale gracefully.** A model that works for one region gets unwieldy at ten, and often breaks entirely at a hundred. I've spent more hours than I'd like to admit tracking down the cell reference that didn't update when someone added a row.
+**It doesn't scale gracefully.** A model that works for one region gets unwieldy at ten, and often breaks entirely at a hundred. I've spent more hours than I'd like to admit tracking down the cell reference that didn't update when someone added a row. 
+
+In short, Excel is the warm blanket that was all you ever needed when you were little, but that feels very limited as an adult. I'm nostalgic for it, but I need more.
 
 ---
 
 ## What I'm building instead
 
-I'm spending the next several months building a better toolkit — primarily in Python, deployed on AWS, using Prophet and AutoGluon for forecasting.
+I'm spending the next several months building a better toolkit  and — primarily in Python, deployed on AWS, using modern tools.
 
-The goal isn't to replace judgment. It's to take the mechanical work out of the way so that judgment has better inputs and more time to operate.
+The goal isn't to replace the deep dive or human judgement. It's to take the mechanical work out of the way so that judgment has better inputs and more time to operate.
 
 Concretely, that means:
 
 - **Forecasting pipelines that feed themselves.** The model knows where to get the attrition rate. It pulls it, incorporates it, and updates the output. No paste. No refresh.
-- **Uncertainty as a first-class output.** P20/P80 ranges, not point estimates. Planning documents that show stakeholders the distribution of outcomes, not a false precision.
+- **Uncertainty as a first-class output.** P20/P80 ranges, not point-in-time estimates. Planning documents that show stakeholders the distribution of outcomes, not a false precision.
 - **AI-assisted interpretation.** Pattern detection and narrative synthesis so the person reading the dashboard spends their time on "what do we do about this?" not "what does this mean?"
 
 I'll document what I learn here — the technical approaches, the dead ends, the things that work differently in practice than they do in the tutorial.
@@ -47,6 +49,6 @@ I'll document what I learn here — the technical approaches, the dead ends, the
 
 Partly to force clarity. Explaining something in writing is the best way I know to find out whether I actually understand it.
 
-Partly because the workforce planning and operations analytics space doesn't have a lot of practitioners publishing openly about methodology. Most of what I know about forecasting I assembled from academic papers, documentation, and trial and error. If writing about what I'm building saves someone else some of that time, that seems worth doing.
+Partly because the workforce planning and operations analytics space doesn't have a lot of practitioners publishing openly about methodology. Most of what I know about forecasting I assembled from working with colleagues and from trial and error. If writing about what I'm building saves someone else some of that time, that seems worth doing.
 
 Welcome to the project.
