@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Sam Brien"
+  description: "Workforce planning, forecasting, and operations analytics"
+  site-url: https://sambrien.com
+  favicon: assets/favicon.ico
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: blog/index.qmd
+        text: Writing
+      - href: portfolio/index.qmd
+        text: Work
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/YOUR_GITHUB_USERNAME
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/YOUR_LINKEDIN
+        aria-label: LinkedIn
+
+  page-footer:
+    center: "© 2026 Sam Brien · [sambrien.com](https://sambrien.com)"
+    background: light
+
+  open-graph: true
+  twitter-card:
+    creator: "@YOUR_TWITTER_HANDLE"
+
+format:
+  html:
+    theme:
+      light: cosmo
+    css: styles.css
+    toc: false
+    link-external-newwindow: true
+    anchor-sections: false

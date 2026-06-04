@@ -1,0 +1,15 @@
+---
+title: "Work"
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+toc: false
+---
+
+Case studies, tools, and analyses. Each one started as a real problem.
