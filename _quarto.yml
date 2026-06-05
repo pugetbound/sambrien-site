@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  execute-dir: project
+  exclude:
+    - README-setup.md
 
 website:
   title: "Sam Brien"
