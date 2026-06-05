@@ -1,9 +1,11 @@
 project:
   type: website
   output-dir: _site
-  execute-dir: project
-  exclude:
-    - README-setup.md
+  files:
+    - "*.qmd"
+    - "!README-setup.md"
+    - blog
+    - portfolio
 
 website:
   title: "Sam Brien"
