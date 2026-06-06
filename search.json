@@ -67,7 +67,7 @@
     "href": "about.html#what-i-build",
     "title": "About",
     "section": "What I build",
-    "text": "What I build\n\nworkforce models — demand, headcount, capacity, attrition, shrinkage, utilization, etc.\nAutomated data pipelines — connecting forecasting models to the sources they depend on, so the model reflects reality without manual intervention.\nDecision-support tools — dashboards and reports that surface what matters, flag what’s changing, and give leaders something to act on."
+    "text": "What I build\n\nWorkforce models — demand, headcount, capacity, attrition, shrinkage, utilization, etc.\nAutomated data pipelines — connecting forecasting models to the sources they depend on, so the model reflects reality without manual intervention.\nDecision-support tools — dashboards and reports that surface what matters, flag what’s changing, and give leaders something to act on."
   },
   {
     "objectID": "about.html#background",
