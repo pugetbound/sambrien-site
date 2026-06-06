@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "blog/posts/2026-06-04-getting-started/index.html",
+    "href": "blog/posts/2026-06-04-getting-started/index.html",
+    "title": "Starting Over With Better Tools",
+    "section": "",
+    "text": "For the past decade I’ve been the person in the room who gets asked “how many people do we need, and when?” At Amazon that meant planning capacity for 14,000 CDL drivers across 400 sites. At T-Mobile it meant building a scheduling system for 20,000 retail employees. Every time, the answer involved the same ritual: pull data from three places, paste it into a spreadsheet, adjust the formula references, hit refresh, and produce a deck that was already slightly out of date.\nIt works. Until it doesn’t. The data is instantly stale. A regional leader thinks of a dimension they want to use to split the data. Seeing data for the first time inspires a hundred additional use cases that never came up in the initial scoping conversations. We decide to get hyper-granular with our data and our dataset blows up Excel’s 1M row limit (this one is my favorite)."
+  },
+  {
+    "objectID": "blog/posts/2026-06-04-getting-started/index.html#the-problem-with-spreadsheet-based-planning",
+    "href": "blog/posts/2026-06-04-getting-started/index.html#the-problem-with-spreadsheet-based-planning",
+    "title": "Starting Over With Better Tools",
+    "section": "The problem with spreadsheet-based planning",
+    "text": "The problem with spreadsheet-based planning\nThe spreadsheet is a remarkable tool. It’s flexible, it’s visual, and anyone who needs to review your work can open it. These are real virtues.\nBut there are things a spreadsheet can’t do cleanly:\nIt can’t pull its own data. Every model I’ve ever built depends on inputs — attrition rates, average handle times, hiring pipeline numbers — that live somewhere else. Unless you’re handy with VBA, then keeping those inputs current means someone manually querying a database (usually in SQL), copying the results, and pasting them in. That someone is usually you.\nIt can’t quantify its own uncertainty. A spreadsheet forecast is a point-in-time estimate. It tells you “We’ll need 847 drivers in Q3” without telling you whether that number is a near-certainty or a wide range. Planning to exactly 847 when the real answer is “somewhere between 780 and 920” is a very different decision. A rare few orgs I’ve been in talk about planning to P80 or the like, but those are uncommon.\nIt doesn’t scale gracefully. A model that works for one region gets unwieldy at ten, and often breaks entirely at a hundred. I’ve spent more hours than I’d like to admit tracking down the cell reference that didn’t update when someone added a row.\nIn short, Excel is the warm blanket that was all you ever needed when you were little, but that feels very limited as an adult. I’m nostalgic for it, but I need more."
+  },
+  {
+    "objectID": "blog/posts/2026-06-04-getting-started/index.html#what-im-building-instead",
+    "href": "blog/posts/2026-06-04-getting-started/index.html#what-im-building-instead",
+    "title": "Starting Over With Better Tools",
+    "section": "What I’m building instead",
+    "text": "What I’m building instead\nI’m spending the next several months building a better toolkit and — primarily in Python, deployed on AWS, using modern tools.\nThe goal isn’t to replace the deep dive or human judgement. It’s to take the mechanical work out of the way so that judgment has better inputs and more time to operate.\nConcretely, that means:\n\nForecasting pipelines that feed themselves. The model knows where to get the attrition rate. It pulls it, incorporates it, and updates the output. No paste. No refresh.\nUncertainty as a first-class output. P20/P80 ranges, not point-in-time estimates. Planning documents that show stakeholders the distribution of outcomes, not a false precision.\nAI-assisted interpretation. Pattern detection and narrative synthesis so the person reading the dashboard spends their time on “what do we do about this?” not “what does this mean?”\n\nI’ll document what I learn here — the technical approaches, the dead ends, the things that work differently in practice than they do in the tutorial."
+  },
+  {
+    "objectID": "blog/posts/2026-06-04-getting-started/index.html#why-im-writing-about-it",
+    "href": "blog/posts/2026-06-04-getting-started/index.html#why-im-writing-about-it",
+    "title": "Starting Over With Better Tools",
+    "section": "Why I’m writing about it",
+    "text": "Why I’m writing about it\nPartly to force clarity. Explaining something in writing is the best way I know to find out whether I actually understand it.\nPartly because the workforce planning and operations analytics space doesn’t have a lot of practitioners publishing openly about methodology. Most of what I know about forecasting I assembled from working with colleagues and from trial and error. If writing about what I’m building saves someone else some of that time, that seems worth doing.\nWelcome to the project."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sam Brien",
+    "section": "",
+    "text": "Workforce planning, forecasting, and operations analytics.\nI build tools and models that help organizations plan smarter — turning data about people, capacity, and demand into decisions leaders can actually act on. Ten years leading workforce planning at Amazon, T-Mobile, and others. Now focused on building the next generation of forecasting tools that go beyond Excel.\nSee my work → Read my writing →"
+  },
+  {
+    "objectID": "index.html#recent-writing",
+    "href": "index.html#recent-writing",
+    "title": "Sam Brien",
+    "section": "Recent Writing",
+    "text": "Recent Writing\n\n\n\n\nAll posts →"
+  },
+  {
+    "objectID": "index.html#selected-projects",
+    "href": "index.html#selected-projects",
+    "title": "Sam Brien",
+    "section": "Selected Projects",
+    "text": "Selected Projects\n\n\nSeattle Ferry Finder\nA real-time ferry schedule tool for the Puget Sound. Built solo with AI assistance, deployed on AWS. The project that started my shift from analyst to builder.\n\n\nComing Soon\nAutomated workforce capacity forecasting pipeline — Prophet + AutoGluon with API-fed inputs, deployed on AWS Lambda.\n\n\nComing Soon\nSupply chain reorder tool for small businesses — demand forecasting integrated with Google Sheets, zero manual steps.\n\n\nAll projects →"
+  },
+  {
+    "objectID": "portfolio/index.html",
+    "href": "portfolio/index.html",
+    "title": "Work",
+    "section": "",
+    "text": "Case studies, tools, and analyses. Each one started as a real problem.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeattle Ferry Finder\n\n\n\nAWS\n\nPython\n\nweb app\n\n\n\nA real-time ferry schedule app for Puget Sound commuters, built solo with AI assistance and deployed on AWS.\n\n\n\n\n\n\nJan 1, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a workforce management and capacity planning leader with 10+ years building the systems and models organizations use to answer “do we have enough of the right people, in the right places, doing the right things?”\nMost recently at Amazon, I’ve owned long- and short-term planning for various retail, customer service, and transportation teams with as many as 14,000 headcount spread across hundreds of sites and global operations.\nI’m interested in building the kind of tools that could have saved years of my life and many late night earlier in my career — forecasting pipelines that pull their own data, dashboards that synthesize rather than just display, and planning tools that work without someone manually hitting refresh on a spreadsheet."
+  },
+  {
+    "objectID": "about.html#what-i-build",
+    "href": "about.html#what-i-build",
+    "title": "About",
+    "section": "What I build",
+    "text": "What I build\n\nWorkforce models — demand, headcount, capacity, attrition, shrinkage, utilization, etc.\nAutomated data pipelines — connecting forecasting models to the sources they depend on, so the model reflects reality without manual intervention.\nDecision-support tools — dashboards and reports that surface what matters, flag what’s changing, and give leaders something to act on."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\nEducation\nMBA, Thunderbird School of Global Management (2012) BA Political Science, BYU–Hawaii (2008)\nExperience\nAmazon Sr. PM, - Demand Planning & Workforce Intelligence Sr. PM, WFM/CP - Product Safety & Compliance/Trusted Seller Experiences Manager, WFM — Transportation Operations Management Sr. PM, WFM, - Amazon Go Sr. Capacity Planner - Shipping & Delivery Support\nMissouri Star Quilt Co Reporting & Analytics Manager\nT-Mobile Business Operations Manager/HR Analyst\nPointmarc Web Analytics Consultant\nUS Dept. of Defense Target Analyst Reporter\nPersonal\n\nI’ve been married to my beautiful wife since 2009\nWe have 3 brilliant and talented kids.\nI’ve run a total of six 100-mile ultra-marathons. Those have resulted in a meniscus that resembled ground beef and 2023 surgery to fix it, so now I mostly chase glory on a Peloton bike (strava or it didn’t happen).\nI was diagnosed with ADHD last year. It’s totally changed my understanding of myself and Adderall has changed my life.\nI was born and raised in the Pacific Northwest and, as such, I have moss growing on my soul.\nMy go-to coffee drink is a quad-shot iced americano. No fillers. Just business."
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About",
+    "section": "Get in touch",
+    "text": "Get in touch\nI’m always up for conversations about workforce planning, forecasting, ops analytics, politics, Russia, coffee, and ultra-marathon running.\nEmail: samuel.brien@gmail.com\nLinkedIn: linkedin.com/in/sambrien\nGitHub: github.com/pugetbound"
+  },
+  {
+    "objectID": "portfolio/seattle-ferry-finder/index.html",
+    "href": "portfolio/seattle-ferry-finder/index.html",
+    "title": "Seattle Ferry Finder",
+    "section": "",
+    "text": "Live site: seattleferryfinder.com\nStack: Python · AWS · [your stack here]\nBuilt: Solo, with AI assistance"
+  },
+  {
+    "objectID": "portfolio/seattle-ferry-finder/index.html#the-problem",
+    "href": "portfolio/seattle-ferry-finder/index.html#the-problem",
+    "title": "Seattle Ferry Finder",
+    "section": "The problem",
+    "text": "The problem\nWashington State Ferries publishes schedule data, but finding the next departure for a specific route — especially when you’re running for the dock — involves too many taps through the official app or website. I wanted something faster: open it, see the next boat, know if you’re going to make it."
+  },
+  {
+    "objectID": "portfolio/seattle-ferry-finder/index.html#what-i-built",
+    "href": "portfolio/seattle-ferry-finder/index.html#what-i-built",
+    "title": "Seattle Ferry Finder",
+    "section": "What I built",
+    "text": "What I built\nA lightweight web app that: - Pulls live schedule and vessel data from WSF’s API - Shows the next several departures for your route - Updates automatically — no manual refresh"
+  },
+  {
+    "objectID": "portfolio/seattle-ferry-finder/index.html#what-i-learned",
+    "href": "portfolio/seattle-ferry-finder/index.html#what-i-learned",
+    "title": "Seattle Ferry Finder",
+    "section": "What I learned",
+    "text": "What I learned\nThis was my first project built entirely with AI assistance from the ground up. The main lessons:\nSpecifying requirements precisely matters more than knowing syntax. The quality of what I got back from AI was directly proportional to how clearly I could describe what I wanted — not just “show the schedule” but “show departures sorted by time, for the selected route pair, with the soonest departure highlighted.”\nProduction deployment is a separate skill from building. Getting the app running locally was straightforward. Getting it running reliably on AWS, with proper error handling when the WSF API returns unexpected data, took significantly more iteration.\nDescribe the failure modes, not just the happy path. The most useful prompt pattern I found: “What happens to this code when [edge case]? Add handling for that.”"
+  },
+  {
+    "objectID": "portfolio/seattle-ferry-finder/index.html#architecture",
+    "href": "portfolio/seattle-ferry-finder/index.html#architecture",
+    "title": "Seattle Ferry Finder",
+    "section": "Architecture",
+    "text": "Architecture\n[Add a simple diagram or description of how it’s deployed here]\n\nThis project is the foundation for a broader set of tools I’m building — automated data pipelines, forecasting integrations, and decision-support dashboards for operations teams. See the rest of my work →"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Thinking out loud on forecasting, workforce planning, building with AI, and the tools I’m working on.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStarting Over With Better Tools\n\n\n\nforecasting\n\nworkforce planning\n\nbuilding\n\n\n\nTen years of workforce planning has taught me a lot about what good forecasting looks like. Now I’m building the tools I always wished existed.\n\n\n\n\n\nJun 4, 2026\n\n\n\n\n\nNo matching items"
+  }
+]
