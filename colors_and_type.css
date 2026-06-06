@@ -1,0 +1,306 @@
+/* ============================================================
+   Sam Brien — Design System
+   colors_and_type.css
+   Foundational color + type tokens (base) and semantic tokens.
+   Earth-toned: deep forest greens, clay/bark browns, warm paper.
+   ============================================================ */
+
+/* ---- Webfonts (Google Fonts CDN — see README font caveat) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ============================================================
+     1. COLOR — BASE PALETTE
+     ============================================================ */
+
+  /* Forest greens — the primary brand hue (pine → sage) */
+  --green-900: #1B271A;   /* deepest — near-black foliage */
+  --green-800: #243023;   /* primary ink-on-paper alt, footers */
+  --green-700: #2E3D2C;   /* primary brand green */
+  --green-600: #3C4E37;   /* buttons, strong accents */
+  --green-500: #4E6145;   /* hover / lifted green */
+  --green-400: #6B7C5C;   /* muted green, meta on dark */
+  --green-300: #93A083;   /* soft sage */
+  --green-200: #C2CBB4;   /* tint fills */
+  --green-100: #E2E7D8;   /* faint green wash */
+
+  /* Earth — clay, terracotta, bark (warm accent + secondary) */
+  --clay-700: #7A3F25;    /* deep burnt */
+  --clay-600: #99502F;    /* terracotta accent (links/CTAs on light) */
+  --clay-500: #B5663F;    /* primary clay accent */
+  --clay-400: #C9855F;    /* soft clay */
+  --clay-200: #EAD3C2;    /* clay tint fill */
+  --bark-700: #3F3022;    /* deep coffee brown */
+  --bark-500: #5E4A35;    /* bark / wood brown */
+  --bark-300: #927B62;    /* taupe */
+
+  /* Warm neutrals — paper & sand */
+  --paper-50:  #FCFAF4;   /* lightest surface (raised cards) */
+  --paper-100: #F4EFE3;   /* default page background — warm cream */
+  --paper-200: #ECE5D5;   /* sunken / alt sections */
+  --sand-300:  #DDD3BE;   /* hairline-on-fill, chips */
+  --sand-400:  #C9BCA0;   /* stronger borders on paper */
+
+  /* Warm grey ink scale */
+  --ink-900: #20271E;     /* primary text — warm green-black */
+  --ink-700: #3D4439;     /* strong body */
+  --ink-500: #5C6154;     /* secondary text */
+  --ink-400: #7C8073;     /* muted / captions */
+  --ink-300: #9C9E92;     /* disabled, faint meta */
+
+  /* Hairlines & dividers */
+  --line:        #DED5C2; /* default border on paper */
+  --line-strong: #CBBFA6; /* emphasized rule */
+  --line-faint:  #EAE3D4; /* subtle inner divider */
+
+  /* Status (earthy, low-saturation) */
+  --ok:    #4E6145;       /* success — moss green */
+  --warn:  #B5663F;       /* caution — clay */
+  --error: #8E3B2E;       /* error — brick red */
+  --info:  #45605E;       /* info — slate teal-green */
+
+  /* ============================================================
+     2. COLOR — SEMANTIC TOKENS
+     ============================================================ */
+  --bg:            var(--paper-100);  /* page background */
+  --bg-alt:        var(--paper-200);  /* alternating sections */
+  --surface:       var(--paper-50);   /* cards, raised panels */
+  --surface-sunk:  var(--paper-200);  /* wells, code blocks bg */
+
+  --fg:            var(--ink-900);    /* primary text */
+  --fg-soft:       var(--ink-700);    /* body text */
+  --fg-muted:      var(--ink-500);    /* secondary */
+  --fg-faint:      var(--ink-400);    /* captions, meta */
+
+  --brand:         var(--green-700);  /* primary brand */
+  --brand-strong:  var(--green-800);
+  --brand-hover:   var(--green-600);
+  --accent:        var(--clay-600);   /* links, highlights, CTAs */
+  --accent-hover:  var(--clay-700);
+
+  --link:          var(--clay-600);
+  --link-hover:    var(--clay-700);
+
+  --border:        var(--line);
+  --border-strong: var(--line-strong);
+  --divider:       var(--line-faint);
+
+  --focus-ring:    var(--green-500);
+
+  /* On-dark (footers, dark hero, green panels) */
+  --on-dark-fg:    #EFEADC;
+  --on-dark-muted: #B3B6A2;
+  --on-dark-line:  rgba(239, 234, 220, 0.16);
+
+  /* ============================================================
+     3. TYPOGRAPHY — FONT FAMILIES
+     ============================================================ */
+  /* Display, headings, and long-form prose now use Hanken Grotesk
+     (the serif Newsreader was retired per brand direction). */
+  --font-display: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif:   'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans:    'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ---- Type scale (1.250 major-third-ish, tuned) ---- */
+  --text-xs:   0.75rem;   /* 12px — micro labels */
+  --text-sm:   0.875rem;  /* 14px — meta, captions */
+  --text-base: 1.0625rem; /* 17px — body default */
+  --text-md:   1.1875rem; /* 19px — lead / large body */
+  --text-lg:   1.5rem;    /* 24px — h4 / subhead */
+  --text-xl:   1.9375rem; /* 31px — h3 */
+  --text-2xl:  2.5rem;    /* 40px — h2 */
+  --text-3xl:  3.25rem;   /* 52px — h1 */
+  --text-4xl:  4.25rem;   /* 68px — display */
+  --text-5xl:  5.5rem;    /* 88px — hero display */
+
+  /* ---- Weights ---- */
+  --w-regular: 400;   /* @kind font */
+  --w-medium:  500;   /* @kind font */
+  --w-semibold:600;   /* @kind font */
+  --w-bold:    700;   /* @kind font */
+
+  /* ---- Line heights ---- */
+  --lh-tight:  1.08;  /* @kind font */
+  --lh-snug:   1.22;  /* @kind font */
+  --lh-normal: 1.5;   /* @kind font */
+  --lh-relaxed:1.7;   /* @kind font */ /* long-form reading */
+
+  /* ---- Letter spacing ---- */
+  --ls-tighter: -0.022em; /* @kind font */
+  --ls-tight:   -0.012em; /* @kind font */
+  --ls-normal:  0;        /* @kind font */
+  --ls-wide:    0.04em;   /* @kind font */
+  --ls-caps:    0.12em;   /* @kind font */ /* uppercase eyebrows / labels */
+
+  /* ============================================================
+     4. SPACING  (4px base grid)
+     ============================================================ */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ============================================================
+     5. RADII
+     ============================================================ */
+  --radius-xs:  3px;
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-pill: 999px;
+
+  /* ============================================================
+     6. SHADOWS / ELEVATION  (warm-tinted, soft)
+     ============================================================ */
+  --shadow-xs: 0 1px 2px rgba(43, 35, 22, 0.06);
+  --shadow-sm: 0 1px 3px rgba(43, 35, 22, 0.08), 0 1px 2px rgba(43, 35, 22, 0.05);
+  --shadow-md: 0 4px 12px rgba(43, 35, 22, 0.09), 0 2px 4px rgba(43, 35, 22, 0.05);
+  --shadow-lg: 0 12px 30px rgba(43, 35, 22, 0.12), 0 4px 8px rgba(43, 35, 22, 0.06);
+  --shadow-inset: inset 0 1px 2px rgba(43, 35, 22, 0.07);
+
+  /* ============================================================
+     7. MOTION
+     ============================================================ */
+  --ease-out:   cubic-bezier(0.22, 0.61, 0.36, 1);   /* @kind other */
+  --ease-in-out:cubic-bezier(0.45, 0.05, 0.25, 1);   /* @kind other */
+  --dur-fast:   120ms;   /* @kind other */
+  --dur-base:   200ms;   /* @kind other */
+  --dur-slow:   360ms;   /* @kind other */
+
+  /* ---- Layout ---- */
+  --measure: 68ch;          /* @kind other */ /* optimal reading width for prose */
+  --container: 1120px;      /* @kind spacing */ /* max content width */
+  --container-narrow: 720px; /* @kind spacing */
+}
+
+/* ============================================================
+   8. SEMANTIC TYPE CLASSES
+   ============================================================ */
+
+.display {
+  font-family: var(--font-display);
+  font-weight: var(--w-semibold);
+  font-size: var(--text-5xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tighter);
+  color: var(--fg);
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: var(--w-semibold);
+  font-size: var(--text-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tighter);
+  color: var(--fg);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: var(--w-semibold);
+  font-size: var(--text-2xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg);
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: var(--w-medium);
+  font-size: var(--text-xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg);
+}
+
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--w-semibold);
+  font-size: var(--text-lg);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg);
+}
+
+.lead {
+  font-family: var(--font-serif);
+  font-weight: var(--w-regular);
+  font-size: var(--text-md);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-soft);
+}
+
+p, .body {
+  font-family: var(--font-sans);
+  font-weight: var(--w-regular);
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-soft);
+}
+
+/* Long-form article prose uses the serif for reading comfort */
+.prose {
+  font-family: var(--font-serif);
+  font-size: var(--text-md);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-soft);
+  max-width: var(--measure);
+}
+
+.small, small {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: var(--lh-normal);
+  color: var(--fg-muted);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--w-semibold);
+  font-size: var(--text-xs);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-weight: var(--w-regular);
+  font-size: var(--text-sm);
+  letter-spacing: var(--ls-normal);
+  color: var(--fg-faint);
+}
+
+code, .code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--surface-sunk);
+  border: 1px solid var(--line-faint);
+  border-radius: var(--radius-xs);
+  padding: 0.1em 0.35em;
+  color: var(--bark-700);
+}
+
+a, .link {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover, .link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
