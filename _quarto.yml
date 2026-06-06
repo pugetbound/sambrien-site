@@ -36,8 +36,10 @@ website:
 
 format:
   html:
-    theme: none
-    css: colors_and_type.css
+    theme: cosmo
+    css:
+      - colors_and_type.css
+      - styles.css
     toc: false
     link-external-newwindow: true
     anchor-sections: false
