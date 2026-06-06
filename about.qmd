@@ -5,7 +5,7 @@ toc: false
 
 I'm a workforce management and capacity planning leader with 10+ years building the systems and models organizations use to answer "do we have enough of the right people, in the right places, doing the right things?"
 
-Most recently at Amazon, I've owned long- and short-term planning for various retail, customer service, and transportation teams with headcount spread across hundreds of sites and global operations. 
+Most recently at Amazon, I've owned long- and short-term planning for various retail, customer service, and transportation teams with as many as 14,000 headcount spread across hundreds of sites and global operations. 
 
 I'm interested in building the kind of tools that could have saved years of my life and many late night earlier in my career — forecasting pipelines that pull their own data, dashboards that synthesize rather than just display, and planning tools that work without someone manually hitting refresh on a spreadsheet.
 
@@ -37,9 +37,16 @@ Pointmarc
 US Dept. of Defense
   Target Analyst Reporter
 
+**Personal**
+- I've been married to my beautiful wife since 2009
+- We have 3 brilliant and talented kids.
+- I've run a total of six 100-mile [ultra-marathons](https://ultrasignup.com/results_participant.aspx?fname=Sam&lname=Brien). Those have resulted in a meniscus that resembled ground beef and 2023 surgery to fix it, so now I mostly chase glory on a [Peloton bike](https://members.onepeloton.com/members/SpicedGinger/overview) [(strava or it didn't happen)](https://www.strava.com/athletes/7796519).
+- I was born and raised in the Pacific Northwest and, as such, I have moss growing on my soul.
+- My go-to coffee drink is a quad-shot iced americano. No fillers. Just business.
+
 ## Get in touch
 
-I'm always up for conversations about workforce planning, forecasting, ops analytics, politics, and ultra-marathon running.
+I'm always up for conversations about workforce planning, forecasting, ops analytics, politics, Russia, coffee, and ultra-marathon running.
 
 **Email:** [samuel.brien@gmail.com](mailto:samuel.brien@gmail.com)  
 **LinkedIn:** [linkedin.com/in/sambrien](https://linkedin.com/in/sambrien)  
