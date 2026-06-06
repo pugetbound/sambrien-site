@@ -381,3 +381,40 @@ a:hover {
 
   p { max-width: 100%; }
 }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  font-family: var(--font-sans);
+  font-weight: var(--w-medium);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-pill);
+  padding: 0.55rem 1.25rem;
+  text-decoration: none !important;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.btn-primary {
+  --bs-btn-bg:           var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-color:        var(--on-dark-fg);
+  --bs-btn-hover-bg:           var(--brand-hover);
+  --bs-btn-hover-border-color: var(--brand-hover);
+  --bs-btn-hover-color:        var(--on-dark-fg);
+  --bs-btn-active-bg:          var(--brand-strong);
+  --bs-btn-active-border-color:var(--brand-strong);
+}
+
+.btn-outline-secondary {
+  --bs-btn-color:        var(--fg-soft);
+  --bs-btn-border-color: var(--border-strong);
+  --bs-btn-hover-bg:     var(--surface);
+  --bs-btn-hover-color:  var(--fg);
+  --bs-btn-hover-border-color: var(--border-strong);
+  --bs-btn-active-bg:    var(--surface-sunk);
+}
