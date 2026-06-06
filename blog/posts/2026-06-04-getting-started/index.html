@@ -25,53 +25,19 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
 <link href="../../../assets/favicon.ico" rel="icon">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-9077ea794c0cdbb0e8f18d697f1655a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
 
 
 <link rel="stylesheet" href="../../../colors_and_type.css">
@@ -86,106 +52,20 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Sam Brien</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../blog/index.html"> 
-<span class="menu-text">Writing</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../portfolio/index.html"> 
-<span class="menu-text">Work</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/pugetbound"> <i class="bi bi-github" role="img" aria-label="GitHub">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/sambrien"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<header id="title-block-header">
 <h1 class="title">Starting Over With Better Tools</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">forecasting</div>
-    <div class="quarto-category">workforce planning</div>
-    <div class="quarto-category">building</div>
-  </div>
-  </div>
 
-<div>
-  <div class="description">
-    Ten years of workforce planning has taught me a lot about what good forecasting looks like. Now I’m building the tools I always wished existed.
-  </div>
-</div>
-
-
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 4, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<p class="date">2026-06-04</p>
 </header>
 
 
 <p>For the past decade I’ve been the person in the room who gets asked “how many people do we need, and when?” At Amazon that meant planning capacity for 14,000 CDL drivers across 400 sites. At T-Mobile it meant building a scheduling system for 20,000 retail employees. Every time, the answer involved the same ritual: pull data from three places, paste it into a spreadsheet, adjust the formula references, hit refresh, and produce a deck that was already slightly out of date.</p>
 <p>It works. Until it doesn’t. The data is instantly stale. A regional leader thinks of a dimension they want to use to split the data. Seeing data for the first time inspires a hundred additional use cases that never came up in the initial scoping conversations. We decide to get hyper-granular with our data and our dataset blows up Excel’s 1M row limit (this one is my favorite).</p>
 <hr>
-<section id="the-problem-with-spreadsheet-based-planning" class="level2">
-<h2 data-anchor-id="the-problem-with-spreadsheet-based-planning">The problem with spreadsheet-based planning</h2>
+<h2 id="the-problem-with-spreadsheet-based-planning">The problem with spreadsheet-based planning</h2>
 <p>The spreadsheet is a remarkable tool. It’s flexible, it’s visual, and anyone who needs to review your work can open it. These are real virtues.</p>
 <p>But there are things a spreadsheet can’t do cleanly:</p>
 <p><strong>It can’t pull its own data.</strong> Every model I’ve ever built depends on inputs — attrition rates, average handle times, hiring pipeline numbers — that live somewhere else. Unless you’re handy with VBA, then keeping those inputs current means someone manually querying a database (usually in SQL), copying the results, and pasting them in. That someone is usually you.</p>
@@ -193,9 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>It doesn’t scale gracefully.</strong> A model that works for one region gets unwieldy at ten, and often breaks entirely at a hundred. I’ve spent more hours than I’d like to admit tracking down the cell reference that didn’t update when someone added a row.</p>
 <p>In short, Excel is the warm blanket that was all you ever needed when you were little, but that feels very limited as an adult. I’m nostalgic for it, but I need more.</p>
 <hr>
-</section>
-<section id="what-im-building-instead" class="level2">
-<h2 data-anchor-id="what-im-building-instead">What I’m building instead</h2>
+<h2 id="what-im-building-instead">What I’m building instead</h2>
 <p>I’m spending the next several months building a better toolkit and — primarily in Python, deployed on AWS, using modern tools.</p>
 <p>The goal isn’t to replace the deep dive or human judgement. It’s to take the mechanical work out of the way so that judgment has better inputs and more time to operate.</p>
 <p>Concretely, that means:</p>
@@ -206,19 +84,18 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>I’ll document what I learn here — the technical approaches, the dead ends, the things that work differently in practice than they do in the tutorial.</p>
 <hr>
-</section>
-<section id="why-im-writing-about-it" class="level2">
-<h2 data-anchor-id="why-im-writing-about-it">Why I’m writing about it</h2>
+<h2 id="why-im-writing-about-it">Why I’m writing about it</h2>
 <p>Partly to force clarity. Explaining something in writing is the best way I know to find out whether I actually understand it.</p>
 <p>Partly because the workforce planning and operations analytics space doesn’t have a lot of practitioners publishing openly about methodology. Most of what I know about forecasting I assembled from working with colleagues and from trial and error. If writing about what I’m building saves someone else some of that time, that seems worth doing.</p>
 <p>Welcome to the project.</p>
 
 
-</section>
-
-</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -315,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'quarto',
+        theme: 'light-border',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -615,20 +492,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>© 2026 Sam Brien · <a href="https://sambrien.com">sambrien.com</a></p>
-</div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 
