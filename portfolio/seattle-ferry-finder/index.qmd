@@ -3,7 +3,7 @@ title: "Seattle Ferry Finder"
 description: "A real-time ferry schedule app for Puget Sound commuters, built solo with AI assistance and deployed on AWS."
 date: 2026-01-01
 categories: [AWS, Python, web app]
-image: thumbnail.png
+image: seattleferryfinder.gif
 ---
 
 **Live site:** [seattleferryfinder.com](https://seattleferryfinder.com)  
