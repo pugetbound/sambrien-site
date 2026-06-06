@@ -16,39 +16,28 @@ I'm interested in building the kind of tools that could have saved years of my l
 - **Decision-support tools** — dashboards and reports that surface what matters, flag what's changing, and give leaders something to act on.
 
 ## Background
-
 #### Education  
-**MBA, Thunderbird School of Global Management** (2012)
-
+**MBA, Thunderbird School of Global Management** (2012)  
 **BA Political Science, BYU–Hawaii** (2008)
 
-#### Experience  
-**Amazon**
-
-Sr. PM, - *Demand Planning & Workforce Intelligence*
-
-Sr. PM, WFM/CP - *Product Safety & Compliance/Trusted Seller Experiences*
-
-Manager, WFM — *Transportation Operations Management*
-
-Sr. PM, WFM, - *Amazon Go*
-
+#### Experience
+**Amazon**  
+Sr. PM, - *Demand Planning & Workforce Intelligence*  
+Sr. PM, WFM/CP - *Product Safety & Compliance/Trusted Seller Experiences*  
+Manager, WFM — *Transportation Operations Management*  
+Sr. PM, WFM, - *Amazon Go*  
 Sr. Capacity Planner - *Shipping & Delivery Support*
 
-**Missouri Star Quilt Co**
-
+**Missouri Star Quilt Co**  
 Reporting & Analytics Manager
 
-**T-Mobile**
-
+**T-Mobile**  
 Business Operations Manager/HR Analyst
 
-**Pointmarc**
-
+**Pointmarc**  
 Web Analytics Consultant
 
-**US Dept. of Defense**
-
+**US Dept. of Defense**  
 Target Analyst Reporter
 
 #### Personal
