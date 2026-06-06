@@ -36,8 +36,7 @@ website:
 
 format:
   html:
-    theme:
-      light: cosmo
+    theme: none
     css: colors_and_type.css
     toc: false
     link-external-newwindow: true
