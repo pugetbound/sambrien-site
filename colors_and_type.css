@@ -190,6 +190,80 @@ body {
 }
 
 /* ============================================================
+   BASE ELEMENT STYLING
+   ============================================================ */
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: var(--w-semibold);
+  line-height: var(--lh-snug);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: var(--ls-tighter);
+  margin-top: 0;
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  letter-spacing: var(--ls-tight);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin-bottom: 1em;
+  max-width: var(--measure);
+}
+
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: var(--space-4);
+  margin-left: 0;
+  margin-bottom: 1em;
+  color: var(--fg-soft);
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 2em 0;
+}
+
+/* Main content container */
+.content {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+/* ============================================================
    8. SEMANTIC TYPE CLASSES
    ============================================================ */
 
