@@ -3,34 +3,44 @@ title: "About"
 toc: false
 ---
 
-I'm a workforce planning and capacity planning leader with 10+ years building the systems and models organizations use to answer "do we have enough people, in the right places, doing the right things?"
+I'm a workforce management and capacity planning leader with 10+ years building the systems and models organizations use to answer "do we have enough of the right people, in the right places, doing the right things?"
 
-Most recently at Amazon, I owned long-range capacity planning for ~14,000 CDL drivers across 400+ sites and led global WFM for a 5,000-person organization. Before that: T-Mobile (led a Kronos/UKG rollout for 20,000 employees), Missouri Star Quilt Co, and a web analytics consultancy.
+Most recently at Amazon, I've owned long- and short-term planning for various retail, customer service, and transportation teams with headcount spread across hundreds of sites and global operations. 
 
-These days I'm focused on building the kind of tools I always wished existed — forecasting pipelines that pull their own data, dashboards that synthesize rather than just display, and planning tools that work without someone manually hitting refresh on a spreadsheet.
+I'm interested in building the kind of tools that could have saved years of my life and many late night earlier in my career — forecasting pipelines that pull their own data, dashboards that synthesize rather than just display, and planning tools that work without someone manually hitting refresh on a spreadsheet.
 
 ## What I build
 
-- **Forecasting models** — demand, headcount, inventory, capacity. Primarily Prophet and AutoGluon. Built for accuracy, built to explain themselves to stakeholders.
+- **workforce models** — demand, headcount, capacity, attrition, shrinkage, utilization, etc. 
 - **Automated data pipelines** — connecting forecasting models to the sources they depend on, so the model reflects reality without manual intervention.
 - **Decision-support tools** — dashboards and reports that surface what matters, flag what's changing, and give leaders something to act on.
 
 ## Background
 
 **Education**  
-MBA, Thunderbird School of Global Management  
-BA Political Science, BYU–Hawaii (summa cum laude)
+MBA, Thunderbird School of Global Management (2012)
+BA Political Science, BYU–Hawaii (2008)
 
 **Experience**  
-Sr. PM, Demand Planning & Workforce Intelligence — Amazon  
-Capacity Planning Manager — Amazon Transportation  
-Business Operations Manager — T-Mobile  
-Reporting & Analytics Manager — Missouri Star Quilt Co
+Amazon
+  Sr. PM, - Demand Planning & Workforce Intelligence
+  Sr. PM, WFM/CP - Product Safety & Compliance/Trusted Seller Experiences
+  Manager, WFM — Transportation Operations Management
+  Sr. PM, WFM, - Amazon Go
+  Sr. Capacity Planner - Shipping & Delivery Support
+Missouri Star Quilt Co
+  Reporting & Analytics Manager
+T-Mobile
+  Business Operations Manager/HR Analyst
+Pointmarc
+  Web Analytics Consultant
+US Dept. of Defense
+  Target Analyst Reporter
 
 ## Get in touch
 
-I'm open to conversations about workforce planning, forecasting, and operations analytics — whether that's a full-time role, consulting work, or just comparing notes.
+I'm always up for conversations about workforce planning, forecasting, ops analytics, politics, and ultra-marathon running.
 
-**Email:** [your@email.com](mailto:your@email.com)  
-**LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-**GitHub:** [github.com/yourusername](https://github.com/yourusername)
+**Email:** [samuel.brien@gmail.com](mailto:samuel.brien@gmail.com)  
+**LinkedIn:** [linkedin.com/in/sambrien](https://linkedin.com/in/sambrien)  
+**GitHub:** [github.com/pugetbound](https://github.com/pugetbound)
